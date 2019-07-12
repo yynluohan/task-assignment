@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal,Form,Input,Select } from 'antd';
+import { Modal,Form,Input } from 'antd';
 import BraftEditor from 'braft-editor';
 import 'braft-editor/dist/index.css';
 import Selection from '../../common/Selection';

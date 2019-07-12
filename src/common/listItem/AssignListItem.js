@@ -14,7 +14,7 @@ export default class AssignListItem extends React.Component {
 
   render() {
 
-    const { title,subtitle,images,replies,status,des,route,name,time } = this.props.itemData;
+    const { title,subtitle,images,replies,status,des,name,time } = this.props.itemData;
 
     const colorObj = {
       "OPEN":"#BF1E2E",
@@ -112,9 +112,9 @@ export default class AssignListItem extends React.Component {
     return(
       <div style={ style } onClick={() => this.onClick()}>
         <div style={{ width: '60%' }}>
-          { title != undefined ? <div style={ titleStyle }>{ title }</div> : '' }
+          { title !== undefined ? <div style={ titleStyle }>{ title }</div> : '' }
           <div style={{display: 'flex',alignItems:'center',margin: '0.5em 0'}}>
-            { subtitle != undefined ? <div style={ subtitleStyle }>{ colorName[subtitle] }</div> : '' }
+            { subtitle !== undefined ? <div style={ subtitleStyle }>{ colorName[subtitle] }</div> : '' }
             { name ? <span style={{margin: '0 0.5em 0 1em',fontSize:"13px"}}>{name}</span> : ''}
             { time ? <span style={{fontSize:"13px"}}>创建于{time}</span> : ''}
           </div>
@@ -128,9 +128,9 @@ export default class AssignListItem extends React.Component {
                 ))
               }
             </div>
-            { status != undefined ? <div style={ statusStyle }>{ obj[status] }</div> : '' }
-            { replies != undefined ? <div style={ repliesStyle }>{ replies }</div> : '' }
-            { des != undefined ? <div style={ desStyle }>{ des }</div> : '' }
+            { status !== undefined ? <div style={ statusStyle }>{ obj[status] }</div> : '' }
+            { replies !== undefined ? <div style={ repliesStyle }>{ replies }</div> : '' }
+            { des !== undefined ? <div style={ desStyle }>{ des }</div> : '' }
           </div>
         </div>
       </div>

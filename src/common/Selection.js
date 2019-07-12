@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu,Dropdown,Button,Icon,notification,Table,Modal,Input,Pagination  } from 'antd';
+import { Button,Table,Modal,Pagination  } from 'antd';
 import Filter from './Filter';
 
 class Selection extends React.Component {
@@ -20,7 +20,7 @@ class Selection extends React.Component {
       visible:props.visible || false,
       isHiddenRow: props.isHiddenRow || false, //是否需要隐藏选择
     }
-    if(props.isShowButtonText == true){
+    if(props.isShowButtonText === true){
       this.showModal()
     }
   }
@@ -38,7 +38,7 @@ class Selection extends React.Component {
     });
     //调用api，获取数据（method表示传进来的方法，比如get，post方法），apiUrl表示调用的api
    this.props.apiUrl && this.props.method(this.props.apiUrl,{...this.props.queryData}).then(({ code, data, message }) => {
-     if(code == 200){
+     if(code === 200){
        let listData = [];
        if(data.records) {      //判断api是否分页处理
          listData = data.records
@@ -78,7 +78,7 @@ class Selection extends React.Component {
   onSearch = (e) => {
     //调用api，更新表格数据
     this.props.method(this.props.apiUrl, {...e}).then(({ code, data, message }) => {
-      if(code == 200){
+      if(code === 200){
         let listData = [];
         if(data.records) {
           listData = data.records

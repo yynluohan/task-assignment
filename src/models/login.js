@@ -1,6 +1,5 @@
-import { query,create } from '../framework/utils/services'
+import { create } from '../framework/utils/services'
 import { message,notification } from 'antd';
-import router from 'umi/router';
 
 export default {
   namespace: 'login',

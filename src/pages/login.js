@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input,Checkbox,Form,message } from 'antd';
+import { Input,Checkbox,Form } from 'antd';
 import styles from './css/login.css';
 import { connect } from 'dva';
 

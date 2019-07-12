@@ -1,10 +1,7 @@
-import { trim } from './trim';
 import { get as getEndpoint } from './endpoint';
 import qs from 'qs';
 import 'whatwg-fetch';
 import 'es6-promise';
-
-let isLogs = false;
 
 function checkServerError(response) {
   // 400 错误依旧格式化成为 json
@@ -72,7 +69,7 @@ export default function request(url, options) {
     .then(parseJSON)
     .then(checkStatus)
     .catch(err => {
-      const { response, message, code = 'null',  url = 'null' } = err;
+      const { response } = err;
       if (response && response.status === 401) {
         window.location.href = window.MC.HASH  + '/login'
       }
