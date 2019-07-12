@@ -1,0 +1,21 @@
+.tabNameMe {
+  color: #fff;
+  padding: 0.3em 1em;
+  /* background-color: #e45735; */
+  margin: 0 2em;
+  border-radius: 1px;
+  cursor:pointer;
+  color: #000;
+}
+
+.tabNameTask {
+  padding: 0.3em 1em;
+  border-radius: 1px;
+  color: #000;
+  cursor:pointer;
+}
+
+.tabNameTask:hover {
+  background-color: #e45735;
+  color: #fff;
+}

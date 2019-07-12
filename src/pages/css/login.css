@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  height:100vh;
+  align-items: center;
+}
+
+.content {
+  width: 550px;
+  height: 550px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2em;
+}
+
+.top div:last-child {
+  color:#FF9800;
+  cursor: pointer;
+}
+
+.centerBut {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.centerBut div {
+  color: #a8a2a2;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #fe7300;
+  width:70%;
+  padding: 0.5em 0;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin: 1em 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.login:active {
+  background-color: #e38231;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  width:70%;
+  color: #ccc;
+}
+
+.line span {
+  height: 1px;
+  width: 30%;
+  background-color: #ccc;
+}
+
+.footBut {
+  position: relative;
+}
+
+.footBut img {
+  width: 60px;
+  cursor: pointer;
+}
+
+.footBut div {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  width: 134px;
+  border-radius: 3px;
+  padding: 0 0.2em;
+}
